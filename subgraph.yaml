@@ -6,12 +6,12 @@ dataSources:
     name: Factory
     network: bsc
     source:
-      address: "0x0EFc2D2D054383462F2cD72eA2526Ef7687E1016"
+      address: "0x07f1925e35e002555C4579c1e7Efd398800c5B1b"
       abi: FactoryAbi
-      startBlock: 19657538
+      startBlock: 21675300
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       file: ./src/mappings/factory.ts
       entities:
@@ -34,12 +34,12 @@ dataSources:
     name: Controller
     network: bsc
     source:
-      address: "0x2d91C960b03F2C39604aE1b644ba508a1366057c"
+      address: "0xeb9380f3a5A92a23D71B507868CC92442aA04bEc"
       abi: ControllerAbi
       startBlock: 20403738
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       file: ./src/mappings/controller.ts
       entities:
@@ -70,7 +70,7 @@ templates:
       abi: PairAbi
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       file: ./src/mappings/core.ts
       entities:
@@ -100,7 +100,7 @@ templates:
       abi: GaugeAbi
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       file: ./src/mappings/gauge.ts
       entities:
@@ -127,7 +127,7 @@ templates:
       abi: BribeAbi
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       file: ./src/mappings/bribe.ts
       entities:
@@ -154,7 +154,7 @@ templates:
       abi: VeAbi
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       file: ./src/mappings/ve.ts
       entities:
@@ -179,7 +179,7 @@ templates:
       abi: VoterAbi
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       file: ./src/mappings/voter.ts
       entities:
@@ -218,7 +218,7 @@ templates:
       abi: VeDistAbi
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       file: ./src/mappings/ve-dist.ts
       entities:
