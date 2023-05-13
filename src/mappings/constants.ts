@@ -47,7 +47,7 @@ export function usdcWethPairAddress(): Address {
   if (network == 'matic') {
     return Address.fromString('0xce1923d2242bba540f1d56c8e23b1fbeae2596dc');
   } else if (network == 'bsc') {
-    return Address.fromString('0x89B26AF36fA8705A27934fcED56D154BDA01315a');
+    return Address.fromString('0x197AA77316f6E0D367935c2a96DbD0FBE1EFEf42');
   } else {
     log.critical("UNKNOWN NETWORK {}", [network])
     return Address.fromString(ADDRESS_ZERO);
@@ -81,7 +81,8 @@ export function whitelisted(): Address[] {
       Address.fromString('0x3f56e0c36d275367b8c502090edf38289b3dea0d'), // MAI
       Address.fromString('0xe9e7cea3dedca5984780bafc599bd69add087d56'), // BUSD
       Address.fromString('0xe80772eaf6e2e18b651f160bc9158b2a5cafca65'), // USD+
-      Address.fromString('0xA60205802E1B5C6EC1CAFA3cAcd49dFeECe05AC9'), // CONE
+      Address.fromString('0x11a38e06699b238d6d9a0c7a01f3ac63a07ad318'), // USDFI
+      Address.fromString('0xa3870fbBeb730BA99e4107051612af3465CA9F5e'), // STABLE
     ];
   } else {
     log.critical("UNKNOWN NETWORK {}", [network])
@@ -102,11 +103,12 @@ export function stablecoins(): Address[] {
   } else if (network == 'bsc') {
     return [
       Address.fromString('0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d'), // USDC
-      // Address.fromString('0x90c97f71e18723b0cf0dfa30ee176ab653e89f40'), // FRAX
+      Address.fromString('0x90c97f71e18723b0cf0dfa30ee176ab653e89f40'), // FRAX
       Address.fromString('0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3'), // DAI
       Address.fromString('0x55d398326f99059ff775485246999027b3197955'), // USDT
-      // Address.fromString('0x3f56e0c36d275367b8c502090edf38289b3dea0d'), // MAI
+      Address.fromString('0x3f56e0c36d275367b8c502090edf38289b3dea0d'), // MAI
       Address.fromString('0xe9e7cea3dedca5984780bafc599bd69add087d56'), // BUSD
+      
     ]
   } else {
     log.critical("UNKNOWN NETWORK {}", [network])
